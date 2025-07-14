@@ -247,16 +247,24 @@
   color: aliceblue;
 }
 
-.bodyInicio .contenedorInversiones {
-  margin-left: 2.6rem;
+.bodyInicio {
+  width: 100%;
+}
+.bodyInicio .alinear {
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+}
+.bodyInicio .alinear .contenedorInversiones {
+  margin-left: 2.5rem;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  width: 60%;
+  width: 70%;
   padding: 0 1.5rem 0 1.5rem;
   background-color: aliceblue;
   padding-bottom: 1rem;
   box-shadow: 1px 1px 5px black;
 }
-.bodyInicio .contenedorInversiones .inversionesEncabezado {
+.bodyInicio .alinear .contenedorInversiones .inversionesEncabezado {
   text-align: center;
   width: 100%;
   display: grid;
@@ -266,10 +274,10 @@
   align-items: center;
   background-color: rgb(227, 232, 255);
 }
-.bodyInicio .contenedorInversiones .inversionesEncabezado .misInversionesOperar {
+.bodyInicio .alinear .contenedorInversiones .inversionesEncabezado .misInversionesOperar {
   width: auto;
 }
-.bodyInicio .contenedorInversiones .spanInversiones {
+.bodyInicio .alinear .contenedorInversiones .spanInversiones {
   margin-top: 1.5rem;
   padding: 1rem 0 1rem 0;
   width: 100%;
@@ -278,12 +286,12 @@
   justify-content: center;
   align-items: center;
 }
-.bodyInicio .contenedorInversiones .divInversiones {
+.bodyInicio .alinear .contenedorInversiones .divInversiones {
   width: 100%;
   text-align: center;
   box-shadow: 1 0 5px black;
 }
-.bodyInicio .contenedorInversiones .divInversiones .sectionInversion {
+.bodyInicio .alinear .contenedorInversiones .divInversiones .sectionInversion {
   width: 100%;
   background-color: white;
   display: grid;
@@ -292,21 +300,21 @@
   align-items: center;
   padding: 4px 0;
 }
-.bodyInicio .contenedorInversiones .divInversiones .sectionInversion .inversionesVenderComprar {
+.bodyInicio .alinear .contenedorInversiones .divInversiones .sectionInversion .inversionesVenderComprar {
   padding-right: 4px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.bodyInicio .contenedorInversiones .divInversiones .sectionInversion .inversionesVenderComprar .inversionesComprar {
+.bodyInicio .alinear .contenedorInversiones .divInversiones .sectionInversion .inversionesVenderComprar .inversionesComprar {
   text-decoration: none;
   color: rgb(0, 179, 6);
 }
-.bodyInicio .contenedorInversiones .divInversiones .sectionInversion .inversionesVenderComprar .inversionesVender {
+.bodyInicio .alinear .contenedorInversiones .divInversiones .sectionInversion .inversionesVenderComprar .inversionesVender {
   text-decoration: none;
   color: rgb(177, 0, 0);
 }
-.bodyInicio .contenedorInversiones .divTotalInversion {
+.bodyInicio .alinear .contenedorInversiones .divTotalInversion {
   background-color: rgb(227, 232, 255);
   border: 1px solid black;
   min-height: 2rem;
@@ -314,12 +322,21 @@
   justify-content: space-between;
   align-items: center;
 }
+.bodyInicio .alinear .infoPersonal {
+  display: flex;
+  margin-right: -2.4rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  width: 22%;
+  padding: 0 1.5rem 0 1.5rem;
+  background-color: aliceblue;
+  padding-bottom: 1rem;
+  box-shadow: 1px 1px 5px black;
+}
 .bodyInicio .contenedorMisOrdenes {
   height: auto;
-  margin-top: 2rem;
-  margin-left: 2.6rem;
+  margin: 0 auto;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  width: 92%;
+  width: 96%;
   padding: 0 1.5rem 0 1.5rem;
   background-color: aliceblue;
   padding-bottom: 1rem;

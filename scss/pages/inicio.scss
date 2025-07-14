@@ -7,91 +7,105 @@
 @use"../abstracts/errores.scss";
 
 .bodyInicio{
+    width: 100%;
+    .alinear{
+        width: 96%;
+        display: flex;
+        justify-content: space-between;
 
-    .contenedorInversiones{
-        margin-left: 2.6rem;
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-        width: 60%;
-        padding: 0 1.5rem 0 1.5rem;        
-        background-color: aliceblue;
-        padding-bottom: 1rem;
-        box-shadow: 1px 1px 5px black;
-
-        .inversionesEncabezado{
-            text-align: center;
-            width: 100%;
-            display: grid;
-            min-height: 2rem;
-            
-            border-bottom: 1px solid;
-            grid-template-columns: repeat(6, 1fr);
-            align-items: center;
-            background-color: rgb(227, 232, 255);
-            
-            .misInversionesOperar{
-                width: auto;
-            }
-        }
-
-        .spanInversiones{
-            margin-top: 1.5rem;
-            padding: 1rem 0 1rem 0;
-            width: 100%;
-            font-size: 2rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .contenedorInversiones{
+            margin-left: 2.5rem;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            width: 70%;
+            padding: 0 1.5rem 0 1.5rem;        
+            background-color: aliceblue;
+            padding-bottom: 1rem;
+            box-shadow: 1px 1px 5px black;
         
-        }
-        .divInversiones{
-            width: 100%;
-            text-align: center;
-            box-shadow: 1 0 5px black;
-           
-            .sectionInversion{
-                
+            .inversionesEncabezado{
+                text-align: center;
                 width: 100%;
-                background-color: white;
                 display: grid;
+                min-height: 2rem;
+            
+                border-bottom: 1px solid;
                 grid-template-columns: repeat(6, 1fr);
+                align-items: center;
+                background-color: rgb(227, 232, 255);
+            
+                .misInversionesOperar{
+                    width: auto;
+                }
+            }
+
+            .spanInversiones{
+                margin-top: 1.5rem;
+                padding: 1rem 0 1rem 0;
+                width: 100%;
+                font-size: 2rem;
+                display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: 4px 0;
-
-                .inversionesVenderComprar{
-                    padding-right: 4px;
-                    display: flex;
-                    justify-content: space-between;
+        
+            }
+            .divInversiones{
+                width: 100%;
+                text-align: center;
+                box-shadow: 1 0 5px black;
+           
+                .sectionInversion{
+                
+                    width: 100%;
+                    background-color: white;
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    justify-content: center;
                     align-items: center;
+                    padding: 4px 0;
 
-                    .inversionesComprar{
-                        text-decoration: none;
-                        color: variables.$color-ganancia;
-                    }
-                    .inversionesVender{
-                        text-decoration: none;
-                        color: variables.$color-perdida;
+                    .inversionesVenderComprar{
+                        padding-right: 4px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .inversionesComprar{
+                            text-decoration: none;
+                            color: variables.$color-ganancia;
+                        }
+                        .inversionesVender{
+                            text-decoration: none;
+                            color: variables.$color-perdida;
+                        }
                     }
                 }
             }
+            .divTotalInversion{
+                background-color: rgb(227, 232, 255);
+                border: 1px solid black;
+                min-height: 2rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
         }
-        .divTotalInversion{
-            background-color: rgb(227, 232, 255);
-            border: 1px solid black;
-            min-height: 2rem;
+      .infoPersonal{
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+            margin-right: -2.4rem;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            width: 22%;
+            padding: 0 1.5rem 0 1.5rem;        
+            background-color: aliceblue;
+            padding-bottom: 1rem;
+            box-shadow: 1px 1px 5px black;
+      }  
     }
-
 
     .contenedorMisOrdenes{
         height: auto;
-        margin-top: 2rem;
-        margin-left: 2.6rem;
+        margin: 0 auto; 
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-        width: 92%;
+        width: 96%;
         padding: 0 1.5rem 0 1.5rem;        
         background-color: aliceblue;
         padding-bottom: 1rem;
