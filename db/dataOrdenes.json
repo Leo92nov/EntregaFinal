@@ -1,0 +1,6 @@
+[
+            {"Nombre": "Coca cola company", "ticker": "KO", "precio": 1500, "cantidad": 10, "orden": "compra", "id": "1", "usuario": "36765496"},
+            {"Nombre": "Realty Income Corporation", "ticker": "O", "precio": 650, "cantidad": 48, "orden": "compra", "id": "2", "usuario": "36765496"},
+            {"Nombre": "Verizon Communications Inc", "ticker": "VZ", "precio": 1530, "cantidad": 20, "orden": "compra", "id": "3", "usuario": "36765496"},
+            {"Nombre": "Amazon.com Inc", "ticker": "AMZN", "precio": 550, "cantidad": 60, "orden": "venta", "id": "4", "usuario": "36765496"}
+        ]

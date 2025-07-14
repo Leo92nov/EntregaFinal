@@ -1,0 +1,11 @@
+[
+            {"Nombre": "Apple Inc", "ticker": "AAPL", "precio": 2500, "cantidad": 60},
+            {"Nombre": "Coca cola company", "ticker": "KO", "precio": 1550, "cantidad": 25},
+            {"Nombre": "Berkshire Hathaway Inc", "ticker": "BRK-B", "precio": 3100, "cantidad": 31},
+            {"Nombre": "Realty Income Corporation", "ticker": "O", "precio": 680, "cantidad": 22},
+            {"Nombre": "Verizon Communications Inc", "ticker": "VZ", "precio": 1580, "cantidad": 12},
+            {"Nombre": "Lockheed Martin", "ticker": "LMT", "precio": 2600, "cantidad": 70},
+            {"Nombre": "Advanced Micro Devices Inc", "ticker": "AMD", "precio": 1990, "cantidad": 37},
+            {"Nombre": "Intel Corporation", "ticker": "INTC", "precio": 1450, "cantidad": 42},
+            {"Nombre": "Amazon.com Inc", "ticker": "AMZN", "precio": 550, "cantidad": 60}
+]

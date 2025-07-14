@@ -3,39 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/index.js" defer></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Proyecto 1 javascript</title>
+    <script defer src="../js/inicio.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Inicio</title>
 </head>
-<body class="bodyIndex">
+<body class="bodyInicio">
+    <header class="header">
+        <nav>
+            <div class="divHeader">
+                <section class="sectionHeader">
+                    <a href="./inicio.html"><img src="../assets/images/inicio/Header.jpg" alt="logo" class="logoHeader"></a>
+                </section>
+                <div class="ulHeader">
+                    <ul class="ulList">
+                        <li class="headerListItem"><a href="./index.html" class="headerListItem">Inicio</a></li>
+                        <li class="headerListItem"><a href="./pages/panelGeneral.html" class="headerListItem">Panel General</a></li>
+                        <li class="headerListItem"><a href="./pages/ordenes.html" class="headerListItem">Operar</a></li>
+                        <li class="headerListItem"><a href="./pages/prestamos.html" class="headerListItem">Prestamos</a></li>
+                        <li class="headerListItem"><a href="./pages/calculdora.html" class="headerListItem">Calculadora</a></li>
+                    </ul>
+                </div>    
+            </div>
+        </nav>
+    </header>
+    <div class="botonesIngresoInvEgreso">
+        <section>
+            <button class="botonIngresoDinero">
+                <span>
+                    Ingresa Dinero
+                </span>
+                <span>
+                    ►
+                </span>
+            </button>
+        </section>
+        <section>
+            <button class="botonInvertir"><span>
+                    Realizar Inversiones
+                </span>
+                <span>
+                    ►
+                </span></button></button>
+        </section>
+        <section>
+            <button class="botonEgresoDinero">
+                <span>
+                    Egreso de Dinero
+                </span>
+                <span>
+                    ►
+                </span></button>
+        </section>
+    </div>
+    <div class="infoCuenta">
 
-    <section class="form">
-        <form action="" class="formIngreso" >
-            <fieldset class="contenidoFormulario">
-                <section class="imagenTextoForm">
-                    <img src="../assets/images/inicio/Coder Inicio.jpg" alt="" class="formImagen">
-                    <p>Ingresa a tu cuenta de<br> Coder Market Brokers</p>
-                </section>
-                <section class="sectionform">
-                    <label for="usuario"></label>
-                    <input type="text" id="usuario" name="usuario" required placeholder="Usuario" >
-                </section>
-                <section class="sectionform">
-                    <label for="contrasena" ></label>
-                    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña">
-                </section>
-                <div id="IngresoError"></div>
-                <section class="sectionform">
-                <input type="submit" value="Ingresar" class="boton" id="ingresoBoton">
-                </section>
-                <section class="sectionform">
-                <a href="./pages/recuperacion.html" id="contrasenaOlvidada">¿Has olvidado tu contraseña?</a>
-                </section>
-                <section class="sectionform">
-                <input type="submit" value="Registrate" class="boton" id="registro">
-                </section>
-            </fieldset>
-        </form>
-    </section>
+        <span id="spane"></span>
+    </div>
+    <div class="contenedorInversiones">
+
+        <span class="spanInversiones">Mis inversiones</span>
+
+        <div class="inversionesEncabezado">
+            <section>Nombre</section>
+            <section>Ticker</section>
+            <section>Precio</section>
+            <section>Cantidad</section>
+            <section>Total por acción</section>
+            <section>Operar CEDEAR</section>
+        </div>
+
+        <div class="divInversiones" id="divInversiones"></div>
+
+        <div class="divTotalInversion">
+            <span>Total Invertido</span>
+            <span id="spanTotalInvertido" class="spanTotalInvertido"></span>
+        </div>
+    </div>
+
+
+    <div class="contenedorMisOrdenes">
+
+        <span class="spanOrdenes">Ordenes Activas</span>
+
+        <div class="ordenesEncabezado">
+            <section>Nombre</section>
+            <section>Ticker</section>
+            <section>Precio</section>
+            <section>Cantidad</section>
+            <section>Tipo de Orden</section>
+        </div>
+
+        <div class="divMisOrdenes" id="divMisOrdenes"></div>
+    </div>
+    <footer class="footerContainer">
+        <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat iste qui vitae iusto eos id adipisci debitis ut provident at necessitatibus quo illo asperiores doloribus impedit eum illum, veritatis fugit!
+        </div>
+    </footer>
 </body>
 </html>
