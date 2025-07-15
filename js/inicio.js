@@ -115,3 +115,6 @@ function renderCartera(ListaCedears) {
 
 
 
+const nombreCuenta = document.getElementById("nombreCuenta");
+const liquidezEnCuenta = document.getElementById("liquidezEnCuenta");
+const totalInvertidoEnCuenta = document.getElementById("totalInvertidoEnCuenta");
