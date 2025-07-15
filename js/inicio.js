@@ -5,6 +5,9 @@ let usuarioLoggeado = "";
 const spane = document.getElementById("spane");
 const divMisOrdenes = document.getElementById("divMisOrdenes");
 const URLOrdenes = "./db/dataOrdenes.json";
+const nombreCuenta = document.getElementById("nombreCuenta");
+const liquidezEnCuenta = document.getElementById("liquidezEnCuenta");
+const totalInvertidoEnCuenta = document.getElementById("totalInvertidoEnCuenta");
 
 
 function obtenerUsuario() {
@@ -13,6 +16,9 @@ function obtenerUsuario() {
         .then(data => {
             usuarioLoggeado = data;
             spane.innerText = `Bienvenido, ${usuarioLoggeado.nombre}`;
+            nombreCuenta.innerText = usuarioLoggeado.nombreUsuario;
+            liquidezEnCuenta.innerText = usuarioLoggeado.liquidez;
+            totalInvertidoEnCuenta.innerText = totalinversion + usuarioLoggeado.liquidez;
         })
         .catch(error => console.error("Error al obtener usuario:", error));
 }
@@ -115,6 +121,6 @@ function renderCartera(ListaCedears) {
 
 
 
-const nombreCuenta = document.getElementById("nombreCuenta");
-const liquidezEnCuenta = document.getElementById("liquidezEnCuenta");
-const totalInvertidoEnCuenta = document.getElementById("totalInvertidoEnCuenta");
+
+
+
