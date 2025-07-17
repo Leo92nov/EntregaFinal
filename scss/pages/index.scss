@@ -11,18 +11,26 @@
     margin: 0;
     background-color: #e8eafc;
 
+
+    .infoCuenta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+    }
     .alinear{
         width: 96%;
         display: flex;
         justify-content: space-between;
+        margin-top: 2rem;
 
         .contenedorInversiones{
             margin-left: 2.5rem;
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
             width: 70%;
-            padding: 0 1.5rem 0 1.5rem;        
+            padding: 0 1.5rem 2rem 1.5rem;        
             background-color: aliceblue;
-            padding-bottom: 1rem;
+            
             box-shadow: 1px 1px 5px black;
         
             .inversionesEncabezado{
@@ -43,7 +51,7 @@
 
             .spanInversiones{
                 margin-top: 1.5rem;
-                padding: 1rem 0 1rem 0;
+                padding: 0 0 1rem 0;
                 width: 100%;
                 font-size: 2rem;
                 display: flex;
@@ -75,10 +83,12 @@
                         .inversionesComprar{
                             text-decoration: none;
                             color: variables.$color-ganancia;
+                            cursor: pointer;
                         }
                         .inversionesVender{
                             text-decoration: none;
                             color: variables.$color-perdida;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -93,14 +103,38 @@
             }
         }
       .infoPersonal{
-            display: flex;
             margin-right: -2.4rem;
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
             width: 22%;
-            padding: 0 1.5rem 0 1.5rem;        
+            padding: 1rem 0;        
             background-color: aliceblue;
-            padding-bottom: 1rem;
             box-shadow: 1px 1px 5px black;
+            box-sizing: border-box;
+
+            .divinfopersonal{
+                width: 100%;
+                height: 6rem;
+                display: flex;
+                padding: 0 0 1rem 1rem ;
+                gap: 32px;
+
+                .nombreCuenta{
+                    width: 100%;
+                    font-size: 2rem;
+                   
+                }
+                .liquidezEnCuenta{
+                    width: 100%;
+                    font-size: 2rem;
+                 
+                }
+                .totalInvertidoEnCuenta{
+                    width: 100%;
+                    font-size: 2rem;
+              
+                }
+            }
+
       }  
     }
 

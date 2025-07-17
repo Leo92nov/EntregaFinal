@@ -7,6 +7,7 @@ const divMisOrdenes = document.getElementById("divMisOrdenes");
 const URLOrdenes = "./db/dataOrdenes.json";
 const nombreCuenta = document.getElementById("nombreCuenta");
 const liquidezEnCuenta = document.getElementById("liquidezEnCuenta");
+const liquidezEnCuentaUSD = document.getElementById("liquidezEnCuentaUSD")
 const totalInvertidoEnCuenta = document.getElementById("totalInvertidoEnCuenta");
 
 
@@ -15,10 +16,12 @@ function obtenerUsuario() {
         .then(response => response.json())
         .then(data => {
             usuarioLoggeado = data;
-            spane.innerText = `Bienvenido, ${usuarioLoggeado.nombre}`;
+            h1User.innerText = `Bienvenido, ${usuarioLoggeado.nombre}`;
             nombreCuenta.innerText = usuarioLoggeado.nombreUsuario;
-            liquidezEnCuenta.innerText = usuarioLoggeado.liquidez;
+            liquidezEnCuenta.innerText = "$" + usuarioLoggeado.liquidez;
+            liquidezEnCuentaUSD.innerText = "U$" + usuarioLoggeado.liquidezUSD
             totalInvertidoEnCuenta.innerText = totalinversion + usuarioLoggeado.liquidez;
+            
         })
         .catch(error => console.error("Error al obtener usuario:", error));
 }
@@ -113,10 +116,44 @@ function renderCartera(ListaCedears) {
             <section>$${cedear.precio}</section>
             <section>${cedear.cantidad}</section>
             <section>$${cedear.cantidad * cedear.precio}</section>
-            <section class="inversionesVenderComprar"><a href="./ordenes.html" class="inversionesComprar">Comprar</a><a href="./ordenes.html" class="inversionesVender">Vender</a></section>
+            <section class="inversionesVenderComprar">
+                <div class="inversionesComprar" id= "inversionesComprar">Comprar</div>
+                <div class="inversionesVender" id="inversionesVender">Vender</div>
+            </section>
         `;
         listaCedears.appendChild(lineas);
+
+
+    
+        const botonComprar = lineas.querySelector(".inversionesComprar");
+        const botonVender = lineas.querySelector(".inversionesVender");
+
+        botonComprar.addEventListener("click", () => {
+            const CompraClick = {
+                Nombre: cedear.Nombre,
+                ticker: cedear.ticker,
+                orden: "Compra"
+            };
+            
+            const cedearAComprar = JSON.stringify(CompraClick)
+            localStorage.setItem("cedearAVender", cedearAComprar)
+            window.location.replace("./pages/operar.html")
+        });
+
+         botonVender.addEventListener("click", () => {
+            const VentaClick = {
+                Nombre: cedear.Nombre,
+                ticker: cedear.ticker,
+                orden: "Venta"
+            };
+            const cedearAVender = JSON.stringify(VentaClick)
+            localStorage.setItem("cedearAVender", cedearAVender)
+            window.location.replace("./pages/operar.html")
+        });
+
     });
+    
+    
 }
 
 

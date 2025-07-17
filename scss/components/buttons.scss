@@ -8,6 +8,9 @@
     width: 100%;
 
     .botonIngresoDinero{
+        text-decoration: none;
+        color: variables.$color-principal;
+        padding: 0 16px;
         background-color: white;
         display: flex;
         justify-content: space-between;
@@ -24,6 +27,8 @@
     .botonInvertir{
         height: 3rem;
         width: 62rem;
+        text-decoration: none;
+        padding: 0 16px;
         font-size: 1.5rem;
         background-color: variables.$color-ganancia;
         display: flex;
@@ -32,9 +37,14 @@
         border: 1px;
         color: aliceblue;
         box-shadow: 0 1px 1px 1px rgb(175, 173, 173);
+        cursor: pointer;
+        
         
     }
     .botonEgresoDinero{
+        text-decoration: none;
+        color: variables.$color-principal;
+        padding: 0 16px;
         background-color: white;
         box-shadow: 0 1px 1px 1px rgb(175, 173, 173);
         display: flex;

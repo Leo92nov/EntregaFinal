@@ -26,24 +26,28 @@
             </div>
         </nav>
     </header>
+    <div class="infoCuenta">
+
+        <h1 id="h1User"></h1>
+    </div>
     <div class="botonesIngresoInvEgreso">
         <section>
-            <button class="botonIngresoDinero">
+            <a href="./pages/prestamos.html" class="botonIngresoDinero">
                 <span>
                     Ingresa Dinero
                 </span>
                 <span>
                     ►
                 </span>
-            </button>
+            </a>
         </section>
         <section>
-            <button class="botonInvertir"><span>
+            <a href="./pages/operar.html" class="botonInvertir"><span>
                     Realizar Inversiones
                 </span>
                 <span>
                     ►
-                </span></button></button>
+                </span></a></button>
         </section>
         <section>
             <button class="botonEgresoDinero">
@@ -54,10 +58,6 @@
                     ►
                 </span></button>
         </section>
-    </div>
-    <div class="infoCuenta">
-
-        <span id="spane"></span>
     </div>
 
     <div class="alinear">
@@ -82,9 +82,23 @@
         </div>
 <!-- ////////////////////////////////////////////////////////////////////////// -->
         <div class="infoPersonal" id="infoPersonal">
-            <section class="nombreCuenta" id="nombreCuenta"></section>
-            <section class="liquidezEnCuenta" id="liquidezEnCuenta"></section>
-            <section class="totalInvertidoEnCuenta" id="totalInvertidoEnCuenta"></section>
+            <div class="divinfopersonal">
+                <section class="nombreCuenta">Usuario </section>
+                <section class="nombreCuenta" id="nombreCuenta"></section>
+            </div>
+            <div class="divinfopersonal">
+                <section class="liquidezEnCuenta">Liquidez</section>
+                <section class="liquidezEnCuenta" id="liquidezEnCuenta"></section>
+            </div>
+            <div class="divinfopersonal">
+                <section class="liquidezEnCuenta">Liquidez U$D</section>
+                <section class="liquidezEnCuenta" id="liquidezEnCuentaUSD"></section>
+            </div>
+            <div class="divinfopersonal">
+                <section class="totalInvertidoEnCuenta">Total Inversion</section>
+                <section class="totalInvertidoEnCuenta" id="totalInvertidoEnCuenta"></section>
+            </div>
+
         </div>
 <!-- //////////////////////////////////////////////////////////////////////////////////// -->
     </div>

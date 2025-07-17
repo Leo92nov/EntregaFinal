@@ -149,18 +149,24 @@
   margin: 0;
   background-color: #e8eafc;
 }
+.bodyInicio .infoCuenta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
 .bodyInicio .alinear {
   width: 96%;
   display: flex;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 .bodyInicio .alinear .contenedorInversiones {
   margin-left: 2.5rem;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   width: 70%;
-  padding: 0 1.5rem 0 1.5rem;
+  padding: 0 1.5rem 2rem 1.5rem;
   background-color: aliceblue;
-  padding-bottom: 1rem;
   box-shadow: 1px 1px 5px black;
 }
 .bodyInicio .alinear .contenedorInversiones .inversionesEncabezado {
@@ -178,7 +184,7 @@
 }
 .bodyInicio .alinear .contenedorInversiones .spanInversiones {
   margin-top: 1.5rem;
-  padding: 1rem 0 1rem 0;
+  padding: 0 0 1rem 0;
   width: 100%;
   font-size: 2rem;
   display: flex;
@@ -208,10 +214,12 @@
 .bodyInicio .alinear .contenedorInversiones .divInversiones .sectionInversion .inversionesVenderComprar .inversionesComprar {
   text-decoration: none;
   color: rgb(0, 179, 6);
+  cursor: pointer;
 }
 .bodyInicio .alinear .contenedorInversiones .divInversiones .sectionInversion .inversionesVenderComprar .inversionesVender {
   text-decoration: none;
   color: rgb(177, 0, 0);
+  cursor: pointer;
 }
 .bodyInicio .alinear .contenedorInversiones .divTotalInversion {
   background-color: rgb(227, 232, 255);
@@ -222,14 +230,32 @@
   align-items: center;
 }
 .bodyInicio .alinear .infoPersonal {
-  display: flex;
   margin-right: -2.4rem;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   width: 22%;
-  padding: 0 1.5rem 0 1.5rem;
+  padding: 1rem 0;
   background-color: aliceblue;
-  padding-bottom: 1rem;
   box-shadow: 1px 1px 5px black;
+  box-sizing: border-box;
+}
+.bodyInicio .alinear .infoPersonal .divinfopersonal {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  padding: 0 0 1rem 1rem;
+  gap: 32px;
+}
+.bodyInicio .alinear .infoPersonal .divinfopersonal .nombreCuenta {
+  width: 100%;
+  font-size: 2rem;
+}
+.bodyInicio .alinear .infoPersonal .divinfopersonal .liquidezEnCuenta {
+  width: 100%;
+  font-size: 2rem;
+}
+.bodyInicio .alinear .infoPersonal .divinfopersonal .totalInvertidoEnCuenta {
+  width: 100%;
+  font-size: 2rem;
 }
 .bodyInicio .contenedorMisOrdenes {
   height: auto;
@@ -283,6 +309,9 @@
   width: 100%;
 }
 .botonesIngresoInvEgreso .botonIngresoDinero {
+  text-decoration: none;
+  color: rgb(10, 37, 64);
+  padding: 0 16px;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -298,6 +327,8 @@
 .botonesIngresoInvEgreso .botonInvertir {
   height: 3rem;
   width: 62rem;
+  text-decoration: none;
+  padding: 0 16px;
   font-size: 1.5rem;
   background-color: rgb(0, 179, 6);
   display: flex;
@@ -306,8 +337,12 @@
   border: 1px;
   color: aliceblue;
   box-shadow: 0 1px 1px 1px rgb(175, 173, 173);
+  cursor: pointer;
 }
 .botonesIngresoInvEgreso .botonEgresoDinero {
+  text-decoration: none;
+  color: rgb(10, 37, 64);
+  padding: 0 16px;
   background-color: white;
   box-shadow: 0 1px 1px 1px rgb(175, 173, 173);
   display: flex;
