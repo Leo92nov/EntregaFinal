@@ -725,6 +725,7 @@
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .bodyPanelGeneral {
   width: 100%;
   box-sizing: border-box;
@@ -793,4 +794,6 @@
   cursor: pointer;
 }
 
+=======
+>>>>>>> d709ba0d9ce8befb63bb9718d400baf693a9a567
 /*# sourceMappingURL=style.css.map */
