@@ -14,7 +14,7 @@
             {"Nombre": "Lojas Renner SA", "ticker": "LREN3", "precio": 580, "ultimoPrecio": 600},
             {"Nombre": "Aegon NV", "ticker": "AEG", "precio": 5150, "ultimoPrecio": 5200},
             {"Nombre": "Fedex Corp", "ticker": "FDX", "precio": 1250, "ultimoPrecio": 1400},
-            {"Nombre": "Target Corp", "ticker": "TGT", "precio": 1420, "ultimoPrecio": 17410},
+            {"Nombre": "Target Corp", "ticker": "TGT", "precio": 1420, "ultimoPrecio": 1410},
             {"Nombre": "Caterpillar Inc", "ticker": "CAT", "precio": 3550, "ultimoPrecio": 3620},
             {"Nombre": "Pfizer Inc", "ticker": "PFE", "precio": 580, "ultimoPrecio": 620},
             {"Nombre": "Bristol-Myers Squibb Co.", "ticker": "BMY", "precio": 2550, "ultimoPrecio": 2400},
