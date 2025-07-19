@@ -1,0 +1,61 @@
+@use"../abstracts/variables.scss";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    .header{
+        background-color: variables.$color-principal;
+        width: 100%;
+
+        .divHeader{
+            width: 100%;
+            display: flex;
+            height: 5rem;
+            justify-content: space-between;
+            
+
+            .sectionHeader{
+                height: 4rem;
+                
+                .logoHeader{
+                    margin-left: 1rem;
+                    margin-top: 0.5rem;
+                    height: 110%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+            }
+
+            .ulHeader{
+                width: 70%;
+                display: flex;
+                
+                
+                .ulList{
+                    font-size: 1.5rem;
+                    color: aliceblue;
+                    width: 100%;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                    :hover{
+                        transform: scale(1.1);
+                        transition: 0.2s;
+                    }
+
+                    .headerListItem{
+                        text-decoration: none;
+                        color: aliceblue;
+                    }
+                }
+            }
+        }
+
+    }
+}

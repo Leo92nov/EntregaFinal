@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/ordenes.js" defer></script>
+    
+    <title>Cedears</title>
+</head>
+
+<body class="bodyOrdenes">
+
+    <header class="header">
+        <nav>
+            <div class="divHeader">
+                <section class="sectionHeader">
+                    <a href="../index.html"><img src="../assets/images/inicio/Header.jpg" alt="logo" class="logoHeader"></a>
+                </section>
+                <div class="ulHeader">
+                    <ul class="ulList">
+                        <li class="headerListItem"><a href="../index.html" class="headerListItem">Inicio</a></li>
+                        <li class="headerListItem"><a href="./panelGeneral.html" class="headerListItem">Panel General</a></li>
+                        <li class="headerListItem"><a href="./operar.html" class="headerListItem">Operar</a></li>
+                        <li class="headerListItem"><a href="./prestamos.html" class="headerListItem">Prestamos</a></li>
+                        <li class="headerListItem"><a href="./calculdora.html" class="headerListItem">Calculadora</a></li>
+                    </ul>
+                </div>    
+            </div>
+        </nav>
+    </header>
+    <head>
+        <h1 class="tituloCajaDePuntas">Caja de puntas</h1>
+    </head>
+    <div class="contenedorCajaDePuntas">
+        <div class="cajaDePuntas">
+            <section class="cedearCajaDePuntas">CEDEAR:
+                <input type="text" class="inputCEDEAR" id="inputCEDEAR" placeholder="ingrese el ticker de cedear">
+                <button id="botonBusquedaCajaDeCPuntas">Buscar</button>
+            </section>
+                <section class="ordenesDeCompra">
+                        <span>C. Compra  </span>
+                        <span>P. Compra</span>
+                    </section>
+                <section class="ordenesCompraCargar" id="ordenesCompraCargar">
+                </section>
+                <section class="ordenesDeVenta">
+                    <section>C. Venta</section>
+                    <section>P. Venta</section>
+                </section>
+                <section class="ordenesVentaCargar" id="ordenesVentaCargar">
+                </section>
+        </div>
+    </div>
+
+
+    <div class="Ordenes">
+        <div class="crearOrden" id="crearOrden">
+            <section class="emitirNuevaOrden">Emitir nueva orden</section>
+            <section class="crearOrdenTipoDeOperacion">
+                <div class="operacionCompra" id="operacionCompra">Compra</div>
+                <div class="operacionVenta" id="operacionVenta">Venta</div>
+            </section>
+        
+            <section class="crearOrdenInformacion">
+                    <label for="nombreEmpresa" >Nombre de empresa</label>
+                <input type="text" name="nombreEmpresa" id="nombreEmpresaNuevaOrden" required>
+            </section>
+            <div class="contenedorRresultadosNuevaOrden">
+                <div id="RresultadosNuevaOrden" class="RresultadosNuevaOrden"></div>
+            </div>
+            <section class="crearOrdenInformacion">
+                <label for="tickerCedearCrearOrden">Ticker de CEDEAR</label>
+                <input type="text" name="tickerCedearCrearOrden" id="tickerNuevaOrden" required>
+            </section>
+            <section class="crearOrdenInformacion">
+                <label for="cantidad" >Cantidad</label>
+                <input type="number" name="cantidad" id="cantidadNuevaOrden" required>
+            </section>
+            <section class="crearOrdenInformacion">
+                <label for="precioCedearOrden" >Precio de CEDEAR</label>
+                <input type="number" name="precioCedearOrden" id="precioCedearNuevaOrden" required>
+            </section>
+            <section class="crearOrdenInformacion">
+                <label for="precioTotalCedearOrden" >Coste total de Operción</label>
+                <input type="number" name="precioTotalCedearOrden" id="precioTotalCedearOrden" readonly>
+            </section>
+        
+            <div id="errorDePrecioTotal"></div>
+        
+            <section class="sectionBotonRealizarOperacion">
+                <button class="botonRealizarOperacion" id="botonRealizarOperacion">Enviar</button>
+            </section>  
+        </div>
+    
+
+        <div class="divFormulariooperacion">
+            <form id="formularioOperacion" class="formularioOperacion">
+                
+                <section class="sectionFormOperacionTitulo">
+                    <section for="cedear">Ejecutar Ordenes</section>
+                </section>
+                <section class="sectionFormOperacion">
+                    <label for="cedear">CEDEAR:</label>
+                    <input type="text" id="cedearAOperar" name="cedear" required />
+                </section>
+            
+                <section class="sectionFormOperacion">
+                    <label for="cedearNombre">Nombre</label>
+                    <input type="text" id="cedearAOperarNombre" name="cedearNombre" />
+                </section>
+                <section class="sectionFormOperacion">
+                    <label for="idOperacion">ID de Operacion:</label>
+                    <input type="text" id="idOperacion" name="idOperacion" />
+                </section>
+            
+                <section class="sectionFormOperacion">
+                    <label for="tipoOperacion">Tipo de operación:</label>
+                    <select id="tipoOperacion" name="tipoOperacion" required>
+                        <option value="">Seleccionar</option>
+                        <option value="compra">Compra</option>
+                        <option value="venta">Venta</option>
+                    </select>
+                </section>
+            
+                <section class="sectionFormOperacion">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidadCedearOperar" name="cantidad" required />
+                </section>
+            
+                <section class="sectionFormOperacion">
+                    <label for="precio">Precio:</label>
+                    <input type="number" id="precioCedearOperar" name="precio"required readonly/>
+                </section>
+                <section class="sectionFormOperacion">
+                    <label for="precioTotal">Precio Total:</label>
+                    <input type="number" id="precioTotalOperar" name="precioTotal" readonly/>
+                </section>
+                <div id="errorDeEjecucionOrdenes"></div>
+                <section class="sectionFormOperacionBoton">
+                    <button type="submit" id="confirmarOperacion" class="confirmarOperacion">Confirmar operación</button>
+                </section>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

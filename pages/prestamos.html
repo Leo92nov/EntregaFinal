@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/prestamos.js" defer></script>
+    <title>Prestamos</title>
+</head>
+<body class="bodyPrestamos">
+    <header class="header">
+        <nav>
+            <div class="divHeader">
+                <section class="sectionHeader">
+                    <a href="../index.html"><img src="../assets/images/inicio/Header.jpg" alt="logo" class="logoHeader"></a>
+                </section>
+                <div class="ulHeader">
+                    <ul class="ulList">
+                        <li class="headerListItem"><a href="../index.html" class="headerListItem">Inicio</a></li>
+                        <li class="headerListItem"><a href="./panelGeneral.html" class="headerListItem">Panel General</a></li>
+                        <li class="headerListItem"><a href="./operar.html" class="headerListItem">Operar</a></li>
+                        <li class="headerListItem"><a href="./prestamos.html" class="headerListItem">Prestamos</a></li>
+                        <li class="headerListItem"><a href="./calculdora.html" class="headerListItem">Calculadora</a></li>
+                    </ul>
+                </div>    
+            </div>
+        </nav>
+    </header>
+    <div>
+        <div class="contenedorHeadPrestamos">
+            <h1 class="h1Prestamos">Solicita tu prestamo al Instante</h1>
+            <div class="divImgsPrestamos">
+                    <img src="../assets/images/prestamos/perstamos personales.png" alt="" class="imgsPrestamos">
+                </section>
+                <section class="">
+                    <img src="../assets/images/prestamos/Hasta x.png" alt="" class="imgsPrestamos">
+                </section>
+                <section class="">
+                    <img src="../assets/images/prestamos/X Cuotas.png" alt="" class="imgsPrestamos">
+                </section>
+                <section class="">
+                    <img src="../assets/images/prestamos/Cuotas fijas.png" alt="" class="imgsPrestamos">
+            </div>
+        </div>
+    </div>
+    
+<div class="formulariosPrestamos">
+    <div class="datosPrestamo">
+        <form action="" class="formPrestamo">
+            <fieldset class="fieldsetPrestamo">
+                <section class="sectioFormPrestamo">
+                    <label for="nombre">Apellido y Nombre/s</label>
+                    <input type="text" id="inputNombrePrestamo" name="nombre">
+                    <label for="usuario">Nombre de Usuario</label>
+                    <input type="text" id="inputNombreUsuarioPrestamo" name="usuario">
+                </section>
+                <section class="sectioFormPrestamo">
+                    <select type="select" name="documentacion" id="documentacionPrestamos">
+                        <option value="seleccion">Documentación:</option>
+                        <option value="DNI">DNI</option>
+                        <option value="DNE">DNE</option>
+                        <label for="dni"></label>
+                        <input type="text" name="dni" placeholder="N° Documento">
+                    </select>
+                </section>
+                <section class="sectioFormPrestamo">
+                    <label for="fechaNacimiento">Fecha de nacimiento</label>
+                    <input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
+                    <label for="sexo">Sexo según Documento</label>
+                    <select name="sexo" id="sexoPrestamo">
+                        <option value="masculino">Masculino</option>
+                        <option value="masculino">Femenino</option>
+                    </select>
+                </section>
+                <section class="sectioFormPrestamo">
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" placeholder="Introduzca su e-mail">
+                </section>
+                <section class="sectioFormPrestamo">
+                    <button type="submit">Calcular Prestamo</button>
+                </section>
+            </fieldset>
+        </form>
+    </div>
+    <div class="datosPrestamo">
+        <form action="" class="formPrestamo">
+            <fieldset class="fieldsetPrestamo">
+                <section class="sectioFormPrestamo">
+                    <label for="nombre">Apellido y Nombre/s</label>
+                    <input type="text" id="inputNombrePrestamo" name="nombre">
+                    <label for="usuario">Nombre de Usuario</label>
+                    <input type="text" id="inputNombreUsuarioPrestamo" name="usuario">
+                </section>
+                <section class="sectioFormPrestamo">
+                    <select type="select" name="documentacion" id="documentacionPrestamos">
+                        <option value="seleccion">Documentación:</option>
+                        <option value="DNI">DNI</option>
+                        <option value="DNE">DNE</option>
+                        <label for="dni"></label>
+                        <input type="text" name="dni" placeholder="N° Documento">
+                    </select>
+                </section>
+                <section class="sectioFormPrestamo">
+                    <label for="fechaNacimiento">Fecha de nacimiento</label>
+                    <input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
+                    <label for="sexo">Sexo según Documento</label>
+                    <select name="sexo" id="sexoPrestamo">
+                        <option value="masculino">Masculino</option>
+                        <option value="masculino">Femenino</option>
+                    </select>
+                </section>
+                <section class="sectioFormPrestamo">
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" placeholder="Introduzca su e-mail">
+                </section>
+                <section class="sectioFormPrestamo">
+                    <button type="submit">Calcular Prestamo</button>
+                </section>
+            </fieldset>
+        </form>
+    </div>
+</div>    
+</body>
+</html>

@@ -1,0 +1,8 @@
+@use"../abstracts/variables.scss";
+
+
+.footerContainer{
+    background-color: variables.$color-principal;
+    margin-top: 3rem,;
+    height: 6rem;
+}

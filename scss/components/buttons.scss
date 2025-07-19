@@ -1,0 +1,61 @@
+@use"../abstracts/variables.scss";
+
+.botonesIngresoInvEgreso{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+    .botonIngresoDinero{
+        text-decoration: none;
+        color: variables.$color-principal;
+        padding: 0 16px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        height: 3rem;
+        width: 25rem;
+        border: 2px;
+        border-top: 4px solid variables.$color-principal;
+        box-shadow: 0 1px 1px 1px rgb(175, 173, 173);
+    }
+
+    .botonInvertir{
+        height: 3rem;
+        width: 62rem;
+        text-decoration: none;
+        padding: 0 16px;
+        font-size: 1.5rem;
+        background-color: variables.$color-ganancia;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px;
+        color: aliceblue;
+        box-shadow: 0 1px 1px 1px rgb(175, 173, 173);
+        cursor: pointer;
+        
+        
+    }
+    .botonEgresoDinero{
+        text-decoration: none;
+        color: variables.$color-principal;
+        padding: 0 16px;
+        background-color: white;
+        box-shadow: 0 1px 1px 1px rgb(175, 173, 173);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.5rem;
+        height: 3rem;
+        margin-right: 2rem;
+        width: 25rem;
+        border: 2px;
+        border-top: 4px solid variables.$color-perdida;
+
+    }
+}

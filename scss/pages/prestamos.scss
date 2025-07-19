@@ -1,0 +1,70 @@
+@use"../abstracts/variables.scss";
+@use"../base/fonts.scss";
+@use"../components/buttons.scss";
+@use"../components/forms.scss";
+@use"../layout/footer.scss";
+@use"../layout/header.scss";
+@use"../abstracts/errores.scss";
+
+.bodyPrestamos{
+    width: 100%;
+    background-color: #e8eafc;
+
+    .contenedorHeadPrestamos{
+        width: 100%;
+
+        
+        .h1Prestamos{
+            margin-top: 2rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        .divImgsPrestamos{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+
+            .imgsPrestamos{
+                margin-top: 3rem;
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                max-width: 100%;
+                border-radius: 15px;
+            }
+        }
+    }
+    .formulariosPrestamos{
+        display: flex;
+
+        .datosPrestamo{
+            width: 40%;
+            margin: 2rem 4rem 0 4rem;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .formPrestamo{
+                min-width: 100%;
+
+                .fieldsetPrestamo{
+
+                    .sectioFormPrestamo{
+                        width: 100%;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                    }
+                }
+            }
+        }
+
+        
+    }
+}

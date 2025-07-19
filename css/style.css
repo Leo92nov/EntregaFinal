@@ -1,0 +1,796 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* .header {
+  background-color: rgb(10, 37, 64);
+  width: 100%;
+}
+* .header .divHeader {
+  width: 100%;
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+}
+* .header .divHeader .sectionHeader {
+  height: 4rem;
+}
+* .header .divHeader .sectionHeader .logoHeader {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  height: 110%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+* .header .divHeader .ulHeader {
+  width: 70%;
+  display: flex;
+}
+* .header .divHeader .ulHeader .ulList {
+  font-size: 1.5rem;
+  color: aliceblue;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+* .header .divHeader .ulHeader .ulList :hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+* .header .divHeader .ulHeader .ulList .headerListItem {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.footerContainer {
+  background-color: rgb(10, 37, 64);
+  margin-top: 3rem;
+  height: 6rem;
+}
+
+.bodyIndex {
+  height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f5ff;
+}
+.bodyIndex .form {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+.bodyIndex .form .formIngreso {
+  width: 28rem;
+  height: auto;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+.bodyIndex .form .formIngreso .contenidoFormulario {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.bodyIndex .form .formIngreso .contenidoFormulario .imagenTextoForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bodyIndex .form .formIngreso .contenidoFormulario .imagenTextoForm p {
+  font-size: 1.5rem;
+}
+.bodyIndex .form .formIngreso .contenidoFormulario .imagenTextoForm .formImagen {
+  height: 10rem;
+  width: 10rem;
+  margin: 0;
+  padding-top: 1rem;
+}
+.bodyIndex .form .formIngreso .contenidoFormulario .sectionform {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+.bodyIndex .form .formIngreso .contenidoFormulario .sectionform input {
+  width: 85%;
+  height: 3rem;
+  border: 1px solid gray;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.bodyIndex .form .formIngreso .contenidoFormulario .sectionform input:hover {
+  border: 1px solid black;
+}
+.bodyIndex .form .formIngreso .contenidoFormulario .sectionform input:focus {
+  border: 2px solid #000ba0;
+  outline: none;
+  top: -0.6rem;
+  left: 0.5rem;
+}
+.bodyIndex .form .formIngreso .contenidoFormulario .sectionform .boton {
+  background-color: #0a2540;
+  color: aliceblue;
+}
+
+.mensajeError {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: rgb(83, 1, 1);
+  margin-top: 6px;
+}
+
+.mensaje-ok {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: rgb(23, 73, 23);
+  margin-top: 6px;
+}
+
+.bodyInicio {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #e8eafc;
+}
+.bodyInicio .infoCuenta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.bodyInicio .alinear {
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.bodyInicio .alinear .contenedorInversiones {
+  margin-left: 2.5rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  width: 70%;
+  padding: 0 1.5rem 2rem 1.5rem;
+  background-color: aliceblue;
+  box-shadow: 1px 1px 5px black;
+}
+.bodyInicio .alinear .contenedorInversiones .inversionesEncabezado {
+  text-align: center;
+  width: 100%;
+  display: grid;
+  min-height: 2rem;
+  border-bottom: 1px solid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  background-color: rgb(227, 232, 255);
+}
+.bodyInicio .alinear .contenedorInversiones .inversionesEncabezado .misInversionesOperar {
+  width: auto;
+}
+.bodyInicio .alinear .contenedorInversiones .spanInversiones {
+  margin-top: 1.5rem;
+  padding: 0 0 1rem 0;
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bodyInicio .alinear .contenedorInversiones .divInversiones {
+  width: 100%;
+  text-align: center;
+  box-shadow: 1 0 5px black;
+}
+.bodyInicio .alinear .contenedorInversiones .divInversiones .sectionInversion {
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0;
+}
+.bodyInicio .alinear .contenedorInversiones .divInversiones .sectionInversion .inversionesVenderComprar {
+  padding-right: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bodyInicio .alinear .contenedorInversiones .divInversiones .sectionInversion .inversionesVenderComprar .inversionesComprar {
+  text-decoration: none;
+  color: rgb(0, 179, 6);
+  cursor: pointer;
+}
+.bodyInicio .alinear .contenedorInversiones .divInversiones .sectionInversion .inversionesVenderComprar .inversionesVender {
+  text-decoration: none;
+  color: rgb(177, 0, 0);
+  cursor: pointer;
+}
+.bodyInicio .alinear .contenedorInversiones .divTotalInversion {
+  background-color: rgb(227, 232, 255);
+  border: 1px solid black;
+  min-height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bodyInicio .alinear .infoPersonal {
+  margin-right: -2.4rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  width: 22%;
+  padding: 1rem 0;
+  background-color: aliceblue;
+  box-shadow: 1px 1px 5px black;
+  box-sizing: border-box;
+}
+.bodyInicio .alinear .infoPersonal .divinfopersonal {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  padding: 0 0 1rem 1rem;
+  gap: 32px;
+}
+.bodyInicio .alinear .infoPersonal .divinfopersonal .nombreCuenta {
+  width: 100%;
+  font-size: 2rem;
+}
+.bodyInicio .alinear .infoPersonal .divinfopersonal .liquidezEnCuenta {
+  width: 100%;
+  font-size: 2rem;
+}
+.bodyInicio .alinear .infoPersonal .divinfopersonal .totalInvertidoEnCuenta {
+  width: 100%;
+  font-size: 2rem;
+}
+.bodyInicio .contenedorMisOrdenes {
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  width: 96%;
+  padding: 0 1.5rem 0 1.5rem;
+  background-color: aliceblue;
+  padding-bottom: 1rem;
+  box-shadow: 1px 1px 5px black;
+}
+.bodyInicio .contenedorMisOrdenes .spanOrdenes {
+  margin-top: 1.5rem;
+  padding: 1rem 0 1rem 0;
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bodyInicio .contenedorMisOrdenes .ordenesEncabezado {
+  text-align: center;
+  width: 100%;
+  display: grid;
+  min-height: 2rem;
+  border-bottom: 1px solid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  background-color: rgb(227, 232, 255);
+}
+.bodyInicio .contenedorMisOrdenes .sectionMisOrdenes {
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0;
+  text-align: center;
+}
+.bodyInicio .noHayOrdenes {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.botonesIngresoInvEgreso {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.botonesIngresoInvEgreso .botonIngresoDinero {
+  text-decoration: none;
+  color: rgb(10, 37, 64);
+  padding: 0 16px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  height: 3rem;
+  width: 25rem;
+  border: 2px;
+  border-top: 4px solid rgb(10, 37, 64);
+  box-shadow: 0 1px 1px 1px rgb(175, 173, 173);
+}
+.botonesIngresoInvEgreso .botonInvertir {
+  height: 3rem;
+  width: 62rem;
+  text-decoration: none;
+  padding: 0 16px;
+  font-size: 1.5rem;
+  background-color: rgb(0, 179, 6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px;
+  color: aliceblue;
+  box-shadow: 0 1px 1px 1px rgb(175, 173, 173);
+  cursor: pointer;
+}
+.botonesIngresoInvEgreso .botonEgresoDinero {
+  text-decoration: none;
+  color: rgb(10, 37, 64);
+  padding: 0 16px;
+  background-color: white;
+  box-shadow: 0 1px 1px 1px rgb(175, 173, 173);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  height: 3rem;
+  margin-right: 2rem;
+  width: 25rem;
+  border: 2px;
+  border-top: 4px solid rgb(177, 0, 0);
+}
+
+.bodyIndex {
+  height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f5ff;
+}
+.bodyIndex .header {
+  background-color: rgb(10, 37, 64);
+}
+.bodyIndex .header .divHeader {
+  width: 100%;
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+}
+.bodyIndex .header .divHeader .sectionHeader {
+  height: 4rem;
+}
+.bodyIndex .header .divHeader .sectionHeader .logoHeader {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  height: 110%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bodyIndex .header .divHeader .ulHeader {
+  width: 70%;
+  display: flex;
+}
+.bodyIndex .header .divHeader .ulHeader .ulList {
+  font-size: 1.5rem;
+  color: aliceblue;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.bodyIndex .header .divHeader .ulHeader .ulList :hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+.bodyIndex .header .divHeader .ulHeader .ulList .headerListItem {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bodyOrdenes .tituloCajaDePuntas {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.bodyOrdenes .contenedorCajaDePuntas {
+  display: flex;
+  justify-content: center;
+}
+.bodyOrdenes .contenedorCajaDePuntas .cajaDePuntas {
+  width: 50%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid black;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+}
+.bodyOrdenes .contenedorCajaDePuntas .cajaDePuntas .cedearCajaDePuntas {
+  width: 100%;
+  height: 3rem;
+  font-size: 2rem;
+  display: grid;
+  grid-column: 1/5;
+  grid-row: 1;
+  display: flex;
+  border-bottom: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(204, 230, 252);
+}
+.bodyOrdenes .contenedorCajaDePuntas .cajaDePuntas .cedearCajaDePuntas .inputCEDEAR {
+  height: 2rem;
+  font-size: 1.5rem;
+}
+.bodyOrdenes .contenedorCajaDePuntas .cajaDePuntas .ordenesDeCompra {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-left: 2px solid black;
+  grid-column: 1/3;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(167, 255, 164);
+}
+.bodyOrdenes .contenedorCajaDePuntas .cajaDePuntas .ordenesCompraCargar {
+  width: 100%;
+  font-size: 1.5rem;
+  border-right: 1px solid black;
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.bodyOrdenes .contenedorCajaDePuntas .cajaDePuntas .ordenesCompraCargar .ordenEnCaja {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 4px 0;
+}
+.bodyOrdenes .contenedorCajaDePuntas .cajaDePuntas .ordenesDeVenta {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-left: 1px solid black;
+  grid-column: 3/5;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(253, 140, 140);
+}
+.bodyOrdenes .contenedorCajaDePuntas .cajaDePuntas .ordenesVentaCargar {
+  width: 100%;
+  font-size: 1.5rem;
+  border-left: 2px solid black;
+  grid-column: 3/5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bodyOrdenes .contenedorCajaDePuntas .cajaDePuntas .ordenesVentaCargar .ordenEnCaja {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 4px 0;
+}
+.bodyOrdenes .Ordenes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+.bodyOrdenes .Ordenes .divFormulariooperacion {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.bodyOrdenes .Ordenes .divFormulariooperacion .formularioOperacion {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  object-fit: contain;
+  border: 1px solid rgb(0, 0, 0);
+}
+.bodyOrdenes .Ordenes .divFormulariooperacion .formularioOperacion .sectionFormOperacionTitulo {
+  width: 100%;
+  background-color: rgb(204, 230, 252);
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+  font-size: 2rem;
+  border-bottom: 2px solid rgb(10, 37, 64);
+}
+.bodyOrdenes .Ordenes .divFormulariooperacion .formularioOperacion .sectionFormOperacion {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.9rem 2rem 0 2rem;
+  font-size: 1.2rem;
+}
+.bodyOrdenes .Ordenes .divFormulariooperacion .formularioOperacion .sectionFormOperacionBoton {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bodyOrdenes .Ordenes .divFormulariooperacion .formularioOperacion .sectionFormOperacionBoton .confirmarOperacion {
+  height: 2rem;
+  width: auto;
+  margin: 1rem 0;
+  padding: 0 4px 0 4px;
+  background-color: rgb(10, 37, 64);
+  color: white;
+}
+.bodyOrdenes .Ordenes .divFormulariooperacion .formularioOperacion .mensajedeError {
+  color: red;
+  display: block;
+}
+.bodyOrdenes .Ordenes .crearOrden {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid gray;
+}
+.bodyOrdenes .Ordenes .crearOrden .emitirNuevaOrden {
+  background-color: rgb(204, 230, 252);
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+  font-size: 2rem;
+  border-bottom: 2px solid rgb(10, 37, 64);
+}
+.bodyOrdenes .Ordenes .crearOrden .crearOrdenTipoDeOperacion {
+  display: flex;
+  justify-content: space-around;
+  height: 4rem;
+}
+.bodyOrdenes .Ordenes .crearOrden .crearOrdenTipoDeOperacion .operacionCompra {
+  width: 40%;
+  margin: 6px;
+  height: 3rem;
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(219, 253, 219);
+}
+.bodyOrdenes .Ordenes .crearOrden .crearOrdenTipoDeOperacion .operacionCompra:hover {
+  cursor: pointer;
+  background-color: rgb(150, 250, 150);
+}
+.bodyOrdenes .Ordenes .crearOrden .crearOrdenTipoDeOperacion .operacionCompraActiva {
+  width: 40%;
+  margin: 6px;
+  height: 3rem;
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 179, 6);
+  color: aliceblue;
+}
+.bodyOrdenes .Ordenes .crearOrden .crearOrdenTipoDeOperacion .operacionVenta {
+  width: 40%;
+  margin: 6px;
+  height: 3rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(253, 219, 219);
+}
+.bodyOrdenes .Ordenes .crearOrden .crearOrdenTipoDeOperacion .operacionVenta:hover {
+  background-color: rgb(255, 134, 134);
+  color: aliceblue;
+  cursor: pointer;
+}
+.bodyOrdenes .Ordenes .crearOrden .crearOrdenTipoDeOperacion .operacionVentaActiva {
+  width: 40%;
+  margin: 6px;
+  height: 3rem;
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(177, 0, 0);
+  color: aliceblue;
+}
+.bodyOrdenes .Ordenes .crearOrden .contenedorRresultadosNuevaOrden {
+  width: 100%;
+  display: flex;
+  padding-left: 65%;
+}
+.bodyOrdenes .Ordenes .crearOrden .contenedorRresultadosNuevaOrden .RresultadosNuevaOrden {
+  padding: 0 8px 0 0;
+  list-style: none;
+  cursor: pointer;
+  color: rgb(10, 37, 64);
+}
+.bodyOrdenes .Ordenes .crearOrden .contenedorRresultadosNuevaOrden .RresultadosNuevaOrden li {
+  padding-top: 4px;
+}
+.bodyOrdenes .Ordenes .crearOrden .contenedorRresultadosNuevaOrden .RresultadosNuevaOrden li:hover {
+  background-color: rgb(204, 230, 252);
+  color: black;
+  font-weight: bolder;
+}
+.bodyOrdenes .Ordenes .crearOrden .crearOrdenInformacion {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem 0 1.5rem;
+}
+.bodyOrdenes .Ordenes .crearOrden .sectionBotonRealizarOperacion {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.bodyOrdenes .Ordenes .crearOrden .sectionBotonRealizarOperacion .botonRealizarOperacion {
+  width: 6rem;
+  height: 2rem;
+  margin: 1rem 1.5rem 1rem 0;
+  background-color: rgb(10, 37, 64);
+  color: aliceblue;
+  font-size: 1rem;
+}
+
+.bodyPrestamos {
+  width: 100%;
+  background-color: #e8eafc;
+}
+.bodyPrestamos .contenedorHeadPrestamos {
+  width: 100%;
+}
+.bodyPrestamos .contenedorHeadPrestamos .h1Prestamos {
+  margin-top: 2rem;
+  text-align: center;
+  width: 100%;
+}
+.bodyPrestamos .contenedorHeadPrestamos .divImgsPrestamos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.bodyPrestamos .contenedorHeadPrestamos .divImgsPrestamos .imgsPrestamos {
+  margin-top: 3rem;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 15px;
+}
+.bodyPrestamos .formulariosPrestamos {
+  display: flex;
+}
+.bodyPrestamos .formulariosPrestamos .datosPrestamo {
+  width: 40%;
+  margin: 2rem 4rem 0 4rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.bodyPrestamos .formulariosPrestamos .datosPrestamo .formPrestamo {
+  min-width: 100%;
+}
+.bodyPrestamos .formulariosPrestamos .datosPrestamo .formPrestamo .fieldsetPrestamo .sectioFormPrestamo {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bodyPanelGeneral {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+.bodyPanelGeneral .contenedorInversiones {
+  margin: 4rem auto;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  width: 95%;
+  padding: 0 1.5rem 2rem 1.5rem;
+  background-color: aliceblue;
+  box-shadow: 1px 1px 5px black;
+}
+.bodyPanelGeneral .contenedorInversiones .inversionesEncabezado {
+  text-align: center;
+  width: 100%;
+  display: grid;
+  min-height: 2rem;
+  border-bottom: 1px solid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  background-color: rgb(227, 232, 255);
+}
+.bodyPanelGeneral .contenedorInversiones .inversionesEncabezado .misInversionesOperar {
+  width: auto;
+}
+.bodyPanelGeneral .contenedorInversiones .spanInversiones {
+  margin-top: 1.5rem;
+  padding: 0 0 1rem 0;
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bodyPanelGeneral .contenedorInversiones .divInversiones {
+  width: 100%;
+  text-align: center;
+  box-shadow: 1 0 5px black;
+}
+.bodyPanelGeneral .contenedorInversiones .divInversiones .sectionInversion {
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0;
+}
+.bodyPanelGeneral .contenedorInversiones .divInversiones .sectionInversion .inversionesVenderComprar {
+  padding-right: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bodyPanelGeneral .contenedorInversiones .divInversiones .sectionInversion .inversionesVenderComprar .inversionesComprar {
+  text-decoration: none;
+  color: rgb(0, 179, 6);
+  cursor: pointer;
+}
+.bodyPanelGeneral .contenedorInversiones .divInversiones .sectionInversion .inversionesVenderComprar .inversionesVender {
+  text-decoration: none;
+  color: rgb(177, 0, 0);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
